@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     SECRET_KEY: str = secrets.token_urlsafe(32)
     ACCESS_TOKEN_EXPIRE_MINUTES: Optional[int] = 120
     ALGORITHM: str
+    BASE_URL: str
 
     # read from .env file
     class Config:
