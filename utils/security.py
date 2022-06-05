@@ -42,9 +42,9 @@ def validate_token(token: str) -> LoginResult:
         payload = jwt.decode(token, settings.SECRET_KEY, settings.ALGORITHM)
         username: str = payload.get("sub")
         if username is None:
-            return LoginError(message="Could not validate credentials")
+            return LoginError(message="Could not validate username")
         else:
-            return LoginSuccess(username=username)
+            return username
 
     except JWTError as e:
         return LoginError(message="Invalid Token")
