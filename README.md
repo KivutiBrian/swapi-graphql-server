@@ -53,7 +53,7 @@ Required basic env variables are
 ```
 ACCESS_TOKEN_EXPIRES_MINUTES
 ALGORITHM = HS256
-BASE_URL
+BASE_URL = https://swapi.dev/api/people
 
 ```
 
