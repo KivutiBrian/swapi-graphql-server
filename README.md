@@ -65,6 +65,7 @@ uvicorn main:app --reload
 7. To run using docker on local or production
 ```
 docker-compose -f docker-compose.dev.yml up --build
+docker-compose -f docker-compose.prod.yml up --build
 ```
 
 ## Important Features to note

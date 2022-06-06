@@ -4,7 +4,7 @@ services:
   api:
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     command: bash -c "uvicorn main:app --reload --workers 1 --host 0.0.0.0"
     container_name: swapi-graphql
     restart: always
